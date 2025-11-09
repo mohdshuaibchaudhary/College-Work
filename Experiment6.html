@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ShopEasy T-Shirt Card</title>
+  <style>
+    body {
+      background-color: #f4f5fa;
+      font-family: Arial, sans-serif;
+      margin: 30px;
+    }
+    .container {
+      border: 2px solid #232323;
+      padding: 20px;
+      border-radius: 6px;
+      background-color: #f4f5fa;
+      max-width: 900px;
+      margin: auto;
+    }
+    .header {
+      background-color: #232323;
+      color: #fff;
+      padding: 14px 0;
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bold;
+      letter-spacing: 0.5px;
+      border-radius: 3px;
+      margin-bottom: 40px;
+    }
+    .product-card {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 1px 8px rgba(60,60,60,0.07);
+      padding: 18px 18px 10px 18px;
+      width: 340px;
+      margin: auto;
+      border: 1px solid #EFEFEF;
+    }
+    .card-img {
+      width: 100%;
+      height: 150px;
+      object-fit: contain;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      background-color: #f6f6f6;
+      display: block;
+    }
+    .card-title {
+      font-weight: bold;
+      margin-bottom: 6px;
+      font-size: 1.1rem;
+    }
+    .card-desc {
+      color: #333;
+      font-size: 15px;
+      margin-bottom: 10px;
+    }
+    .card-price {
+      color: #008060;
+      font-weight: bold;
+      font-size: 1rem;
+      margin-right: 8px;
+    }
+    .card-oldprice {
+      color: #888;
+      text-decoration: line-through;
+      font-size: 0.97rem;
+    }
+    .add-to-cart {
+      width: 100%;
+      background-color: #1477d7;
+      color: white;
+      border: none;
+      padding: 10px 0;
+      border-radius: 5px;
+      font-size: 1rem;
+      margin-top: 14px;
+      cursor: pointer;
+      font-weight: 500;
+    }
+    .add-to-cart:hover {
+      background-color: #0954a9;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">ShopEasy</div>
+    <div class="product-card">
+      <div class="card">
+        <!-- Use your own T-shirt image URL below or use the provided one -->
+        <img src="https://img.freepik.com/premium-photo/green-tshirt-front-white-background_984660-3294.jpg" alt="Green T-shirt" class="card-img" />
+        <div class="card-title">Classic Cotton T-Shirt</div>
+        <div class="card-desc">Soft, breathable cotton. Regular fit. Available in multiple colors.</div>
+        <div>
+          <span class="card-price">₹799</span>
+          <span class="card-oldprice">₹1,199</span>
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
