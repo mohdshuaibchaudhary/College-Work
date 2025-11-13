@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Newsletter Subscription</title>
+  <style>
+    body {
+      font-family: Arial;
+      text-align: center;
+      margin-top: 100px;
+    }
+    input[type="email"] {
+      width: 220px;
+      border: 1px solid gray;
+      margin-right: 5px;
+    }
+    button {
+      background-color: blue;
+      color: white;
+      border: none;
+      margin-left: 2px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Subscribe to our Newsletter</h2>
+  <form onsubmit="alert('Thank you for subscribing!'); return false;">
+    <input type="email" placeholder="Enter your email" required>
+    <button type="submit">Subscribe</button>
+  </form>
+
+</body>
+</html>
