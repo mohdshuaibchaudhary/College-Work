@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Student Profile Cards</title>
+  <style>
+    :root{
+      --card-bg: #ffffff;
+      --muted:#6b6b6b;
+      --accent:#1e88ff;
+      --card-border:#e6e6e6;
+      --shadow: 0 6px 18px rgba(18,18,18,0.06);
+      --radius:12px;
+      --gap:28px;
+      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+      color:#222;
+    }
+
+    body{
+      margin:40px;
+      background: #fafafa;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+
+    
+    .frame {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 24px;
+      border: 3px solid #111; 
+      background: transparent;
+    }
+
+    
+    .cards-wrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: var(--gap);
+      padding: 28px;
+      box-sizing: border-box;
+    }
+
+    
+    .card {
+      width: 230px;
+      background: var(--card-bg);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      border: 1px solid var(--card-border);
+      padding: 28px 18px 22px;
+      text-align: center;
+      position: relative;
+    }
+
+    
+    .avatar {
+      width: 64px;
+      height: 64px;
+      margin: 0 auto 14px;
+      border-radius: 50%;
+      background: var(--accent);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      font-weight: 700;
+      letter-spacing: 1px;
+      box-shadow: 0 6px 12px rgba(30,136,255,0.18);
+      font-size: 18px;
+    }
+
+    .name {
+      font-weight: 700;
+      margin-bottom: 6px;
+      font-size: 15px;
+      color: #111;
+    }
+
+    .meta {
+      font-size: 13px;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    
+    .card::after{
+      content: "";
+      position: absolute;
+      left: 8px;
+      top: 10px;
+      bottom: 10px;
+      width: 3px;
+      background: linear-gradient(#fff, rgba(0,0,0,0.02));
+      border-radius: 2px;
+      opacity: 0.06;
+    }
+
+    
+    @media (max-width:880px){
+      .cards-wrap {
+        gap: 16px;
+        flex-wrap: wrap;
+      }
+      .card { width: 42%; }
+    }
+    @media (max-width:520px){
+      .card { width: 100%; }
+      .frame { padding: 12px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="frame">
+    <div class="cards-wrap">
+      <div class="card">
+        <div class="avatar">JK</div>
+        <div class="name">Jeet Kumar</div>
+        <div class="meta">
+          B.Tech - CSE<br>
+          Roll No: 21CS1007<br>
+          1st Year
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="avatar">AR</div>
+        <div class="name">Asha Rani</div>
+        <div class="meta">
+          B.Tech - IT<br>
+          Roll No: 21IT1012<br>
+          1st Year
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="avatar">RK</div>
+        <div class="name">Rohit Kumar</div>
+        <div class="meta">
+          B.Tech - ECE<br>
+          Roll No: 21EC1009<br>
+          1st Year
+        </div>
+      </div>
+    </div>
+  </div>
+   <h3>MOHD SHUAIB</h3>
+   <h3>2025B01011106</h3>
+</body>
+</html>
